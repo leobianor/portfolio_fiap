@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    background-image: url("../images/hero.png");
+    background-size: cover;
+    height: 100vh;
+    padding: 29rem 7.2rem;
+}
+
+h1 {
+    font-family: 'poppins';
+    font-size: 5rem;
+    font-weight: 900;
+    color: #FFF;
+}
+
+span {
+    font-family: 'montserrat';
+    font-size: 4rem;
+    color: #FFF;
+}
