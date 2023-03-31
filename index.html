@@ -7,8 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+    <nav>
+        <div id="hamburguer">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div>
+
+        <ul id="menu">
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Home</a></li>
+            <li><a href="#">
+                <i class="fa-solid fa-user"></i>
+                Apresentação</a></li>
+            <li><a href="#">
+                <i class="fa-solid fa-code"></i>
+                Projetos</a></li>
+            <li><a href="#">
+                <i class="fa-solid fa-coins"></i>
+                Orçamento</a></li>
+        </ul>
+
+    </nav>
+
+
 
     <header>
         <h1>Web Developer & Front End </h1>
@@ -27,6 +55,63 @@
                 <a href="#" class="button">ver projetos</a>
         </div>
     </section>
-    
+
+    <section id="section-projects">
+        <h2>Projetos</h2>
+        <ul>
+            <li>
+                <div class="card-image"><img src="./assets/images/projeto1.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3>FiapFilms</h3>
+                    <h4>HTML,CSS,JS</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="" class="button">Saiba Mais</a>
+                </div>
+            </li>
+            <li>
+                <div class="card-image"><img src="./assets/images/projeto1.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3></h3>
+                    <h4></h4>
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </li>
+            <li>
+                <div class="card-image"><img src="./assets/images/projeto1.jpg" alt=""></div>
+                <div class="card-info">
+                    <h3></h3>
+                    <h4></h4>
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="section-budged">
+        <form action="#">
+            <h4>Orçamento</h4>
+            <label for="qtde">Quantidade de páginas</label>
+            <input type="number" id="qtde" min="1" placeholder="Digite a quantidade">
+            <label for="js">Precisa de JS?</label>
+            <input type="checkbox" id="js">
+            <label for="layout">Precisa de layout?</label>
+            <div>
+                <input type="radio" id="layout-sim" name="layout">
+                <label for="layout-sim">Sim,preciso</label>
+                <input type="radio"id="layout-nao" name="layout">
+                <label for="layout-nao">Não, já tenho</label>
+            </div>
+            <label for="prazo">Prazo</label>
+            <input type="range" id="prazo" min="1" max="10">
+            <output id="preco">R$ 100,00</output>
+
+        </form>
+
+    </section>
+
+    <script src="./assets/js/script.js"></script>   
+    <script src="./assets/js/menu.js"></script>   
 </body>
 </html>
