@@ -1,117 +1,153 @@
-<!-- base de arquivo html(para utilizar só digitar "!") --> 
+<!-- base de arquivo html(para utilizar só digitar "!") -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifolio</title>
-    <link rel="stylesheet" href="./assets/CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./assets/js/loader.js"></script>
+  </head>
 
-<body>
-    <nav>
+  <body>
+    <div class="loader">
+      <div class="spin"></div>
+    </div>
+    <main class="hide">
+      <nav>
         <div id="hamburguer">
-            <div class="linha"></div>
-            <div class="linha"></div>
-            <div class="linha"></div>
+          <div class="linha"></div>
+          <div class="linha"></div>
+          <div class="linha"></div>
         </div>
 
         <ul id="menu">
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-house"></i>
-                    Home</a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-user"></i>
-                Apresentação</a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-code"></i>
-                Projetos</a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-coins"></i>
-                Orçamento</a></li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+              Home</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-user"></i>
+              Apresentação</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-code"></i>
+              Projetos</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-coins"></i>
+              Orçamento</a
+            >
+          </li>
         </ul>
+      </nav>
 
-    </nav>
+      <header>
+        <h1>Web Developer & Front End</h1>
+        <span>Leonardo Filiaci Bianor</span>
+        <a href="#" class="button">Saiba Mais</a>
+        <!-- cria link -->
+      </header>
 
-
-
-    <header>
-        <h1>Web Developer & Front End </h1>
-        <span>Leonardo Filiaci Bianor</span> 
-        <a href="#" class="button">Saiba Mais</a> <!-- cria link --> 
-    </header>
-
-    <section class="section-presentation">
-        <img class="avatar" src="https://github.com/leobianor.png" alt="avatar do João Carlos">
+      <section class="section-presentation">
+        <img
+          class="avatar large-only"
+          src="https://github.com/leobianor.png"
+          alt="avatar do João Carlos"
+        />
         <div>
-            <h2>Programando e ensinado a progamar desde a década de 70</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 
-                1500s, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book.</p>
-                <a href="#" class="button">ver projetos</a>
+          <h2>Programando e ensinado a progamar desde a década de 70</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <a href="#" class="button">ver projetos</a>
         </div>
-    </section>
+      </section>
 
-    <section id="section-projects">
+      <section id="section-projects">
         <h2>Projetos</h2>
         <ul>
-            <li>
-                <div class="card-image"><img src="./assets/images/projeto1.jpg" alt=""></div>
-                <div class="card-info">
-                    <h3>FiapFilms</h3>
-                    <h4>HTML,CSS,JS</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <a href="" class="button">Saiba Mais</a>
-                </div>
-            </li>
-            <li>
-                <div class="card-image"><img src="./assets/images/projeto1.jpg" alt=""></div>
-                <div class="card-info">
-                    <h3></h3>
-                    <h4></h4>
-                    <p></p>
-                    <a href=""></a>
-                </div>
-            </li>
-            <li>
-                <div class="card-image"><img src="./assets/images/projeto1.jpg" alt=""></div>
-                <div class="card-info">
-                    <h3></h3>
-                    <h4></h4>
-                    <p></p>
-                    <a href=""></a>
-                </div>
-            </li>
-        </ul>
-    </section>
-
-    <section id="section-budged">
-        <form action="#">
-            <h4>Orçamento</h4>
-            <label for="qtde">Quantidade de páginas</label>
-            <input type="number" id="qtde" min="1" placeholder="Digite a quantidade">
-            <label for="js">Precisa de JS?</label>
-            <input type="checkbox" id="js">
-            <label for="layout">Precisa de layout?</label>
-            <div>
-                <input type="radio" id="layout-sim" name="layout">
-                <label for="layout-sim">Sim,preciso</label>
-                <input type="radio"id="layout-nao" name="layout">
-                <label for="layout-nao">Não, já tenho</label>
+          <li>
+            <div class="card-image">
+              <img src="./assets/images/projeto1.jpg" alt="" />
             </div>
-            <label for="prazo">Prazo</label>
-            <input type="range" id="prazo" min="1" max="10">
-            <output id="preco">R$ 100,00</output>
+            <div class="card-info">
+              <h3>FiapFilms</h3>
+              <h4>HTML,CSS,JS</h4>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="" class="button">Saiba Mais</a>
+            </div>
+          </li>
+          <li>
+            <div class="card-image">
+              <img src="./assets/images/projeto1.jpg" alt="" />
+            </div>
+            <div class="card-info">
+              <h3></h3>
+              <h4></h4>
+              <p></p>
+              <a href=""></a>
+            </div>
+          </li>
+          <li>
+            <div class="card-image">
+              <img src="./assets/images/projeto1.jpg" alt="" />
+            </div>
+            <div class="card-info">
+              <h3></h3>
+              <h4></h4>
+              <p></p>
+              <a href=""></a>
+            </div>
+          </li>
+        </ul>
+      </section>
 
+      <section id="section-budged">
+        <form action="#">
+          <h4>Orçamento</h4>
+          <label for="qtde">Quantidade de páginas</label>
+          <input
+            type="number"
+            id="qtde"
+            min="1"
+            placeholder="Digite a quantidade"
+          />
+          <label for="js">Precisa de JS?</label>
+          <input type="checkbox" id="js" />
+          <label for="layout">Precisa de layout?</label>
+          <div>
+            <input type="radio" id="layout-sim" name="layout" />
+            <label for="layout-sim">Sim,preciso</label>
+            <input type="radio" id="layout-nao" name="layout" />
+            <label for="layout-nao">Não, já tenho</label>
+          </div>
+          <label for="prazo">Prazo</label>
+          <input type="range" id="prazo" min="1" max="10" />
+          <output id="preco">R$ 100,00</output>
         </form>
+      </section>
 
-    </section>
-
-    <script src="./assets/js/script.js"></script>   
-    <script src="./assets/js/menu.js"></script>   
-</body>
+      <script src="./assets/js/script.js"></script>
+      <script src="./assets/js/menu.js"></script>
+    </main>
+  </body>
 </html>
