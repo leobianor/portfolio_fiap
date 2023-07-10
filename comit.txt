@@ -1,2 +1,0 @@
-git config user.name leobianor
-git config user.email leobianor@outlook.com
